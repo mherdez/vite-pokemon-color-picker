@@ -5,27 +5,37 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: #aaa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(4, 1fr);
+  /* min-width: 100vw;
+  min-height: 100vh; */
+  margin: 30px auto;
+  gap: 60px;
+  width: 80%;
+
 }
