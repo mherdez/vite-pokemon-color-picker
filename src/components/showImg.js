@@ -5,10 +5,10 @@ import { drawBox } from './drawBox';
 export const showImg = () => {
   const container = document.querySelector('#app');
 
-  // const urlPhoto = 'https://picsum.photos/300/500';
+  const url = 'https://picsum.photos/300/500';
 
   const id = Math.floor(Math.random() * 649 + 1)
-  const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`
+  // const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`
 
   const img = createImg(url);
   container.appendChild(img);
